@@ -1,0 +1,339 @@
+/* pages/detail/detail.wxss */
+
+.detail {
+  width: 750rpx;
+}
+
+.header {
+  height: 538rpx;
+}
+
+.detailTop {
+  width: 750rpx;
+  position: fixed;
+  left: 0rpx;
+  top: 0rpx;
+}
+
+.videoBlock {
+  width: 100%;
+  height: 450rpx;
+}
+
+.videoBlock video {
+  width: 100%;
+  height: 100%;
+}
+
+.selectBar {
+  width: 100%;
+  height: 80rpx;
+  /*
+  margin-top: 5rpx;
+  */
+  text-align: center;
+  border-bottom: solid #eaeaea;
+  background-color: #fff;
+}
+
+.selectBar view {
+  float: left;
+  margin-top: 10rpx;
+  margin-left: 150rpx;
+}
+
+.current {
+  color: pink;
+  padding-bottom: 15rpx;
+  border-bottom: 5rpx solid pink;
+}
+
+.detailBottom {
+  width: 750rpx;
+  float: left;
+  /*
+  border-bottom: solid red;
+  */
+}
+
+.desc{
+  width: 750rpx;
+  float: left;
+  border-bottom: solid #eaeaea;
+}
+
+.authorInfo {
+  width: 750rpx;
+  margin-bottom: 20rpx;
+  
+  /*
+  border-bottom: solid red;
+  */
+}
+
+.authorInfo image {
+  margin-left: 20rpx;
+  margin-top: 10rpx;
+  width: 80rpx;
+  height: 80rpx;
+  display: block;
+  overflow: hidden;
+  border-radius: 50%;
+  float: left;
+}
+.textInfo{
+  padding-top:7rpx; 
+}
+
+.textInfo text {
+  padding-left: 20rpx;
+  font-size: 14px;
+  
+}
+
+.textInfo text:nth-of-type(2) {
+  display: flex;
+  white-space:pre-line;
+  font-size: 12px;
+  color:#958888;
+}
+
+.videoTitle{
+  width: 710rpx;
+  height: 110rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  margin-top: 20rpx;
+}
+
+.videoTitle text{
+  font-size: 20px;
+}
+
+.playInfo{
+  width: 100%;
+  height: 110rpx;
+}
+
+
+.playVolume{
+  width: 235rpx;
+  height: 30rpx;
+  display: block;
+  float: left;
+  margin-left: 20rpx;
+}
+
+.playVolume image{
+  width: 30rpx;
+  height: 30rpx;
+}
+
+.playVolume text{
+  margin-left: 5rpx;
+  text-align: center;
+  font-size: 14px;
+  color: #a1a1a1;
+}
+
+.commentVolume{
+  width: 235rpx;
+  height: 30rpx;
+  display: block;
+  float: left;
+}
+.commentVolume image{
+  width: 30rpx;
+  height: 30rpx;
+}
+
+.commentVolume text{
+  margin-left: 5rpx;
+  text-align: center;
+  font-size: 14px;
+  color: #a1a1a1;
+}
+
+.time{
+  width: 235rpx;
+  height: 30rpx;
+  display: block;
+  float: left;
+}
+
+.time text{
+  margin-left: 5rpx;
+  text-align: center;
+  font-size: 14px;
+  color: #a1a1a1;
+}
+
+.Reprint{
+  width: 710rpx;
+  height: 30rpx;
+  display: block;
+  float: left;
+  margin-left: 15rpx;
+  margin-right: 20rpx;
+  margin-top: 30rpx;
+  padding-right: 20rpx;
+}
+
+.Reprint text{
+  margin-left: 5rpx;
+  text-align: center;
+  font-size: 14px;
+  color: #a1a1a1;
+}
+
+.Reprint image{
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.descInfo{
+  width: 710rpx;
+  margin-top: 20rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  margin-bottom: 20rpx;
+  display: block;
+  float: left;
+  /*
+  border-top: solid red;
+  */
+}
+.descInfo text{
+  float: left;
+  margin-top: 20rpx;
+  font-size: 12px;
+  color: #a1a1a1;
+}
+.recommendMoudle{
+  display: block;
+  float: left;
+  width: 750rpx;
+  height: 220rpx;
+  border-bottom: solid #eaeaea;
+}
+
+.recommend{
+  width: 710rpx;
+  height: 200rpx;
+  float: left;
+  margin-top: 20rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  
+}
+
+.left{
+  display: block;
+  float: left;
+  width: 230rpx;
+  height: 200rpx;
+  
+}
+.left image{
+  display: block;
+  width: 210rpx;
+  height: 180rpx;
+  border-radius: 10rpx;
+}
+
+.right{
+  display: block;
+  float: left;
+  width: 470rpx;
+  height: 200rpx;
+}
+
+.recommendTitle{
+  display: block;
+  float: left;
+  width: 430rpx;
+  height: 100rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+}
+
+.recommendTitle text{
+  display: block;
+  float: left;
+  font-size: 14px;
+}
+
+.recommendAuthor{
+  display: block;
+  float: left;
+  width: 430rpx;
+  height: 50rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+
+}
+
+.recommendAuthor image{
+  display: block;
+  float: left;
+  width: 30rpx;
+  height: 30rpx;
+  padding-right: 10rpx;
+}
+
+.recommendAuthor text{
+  display: block;
+  float: left;
+  font-size: 12px;
+  color: #a1a1a1;
+}
+
+.recommendHot{
+  display: block;
+  float: left;
+  width: 430rpx;
+  height: 50rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+}
+.recommendHotPlay{
+  float: left;
+  width: 150rpx;
+}
+
+
+.recommendHotPlay image{
+  display: block;
+  float: left;
+  width: 30rpx;
+  height: 30rpx;
+  padding-right: 10rpx;
+}
+
+.recommendHotPlay text{
+  display: block;
+  float: left;
+  font-size: 12px;
+  color: #a1a1a1;
+}
+
+.recommendHotCommen{
+  float: left;
+  width: 150rpx;
+}
+
+
+.recommendHotCommen image{
+  display: block;
+  float: left;
+  width: 30rpx;
+  height: 30rpx;
+  padding-right: 10rpx;
+}
+
+.recommendHotCommen text{
+  display: block;
+  float: left;
+  font-size: 12px;
+  color: #a1a1a1;
+}

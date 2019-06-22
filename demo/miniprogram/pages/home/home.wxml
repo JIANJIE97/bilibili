@@ -1,0 +1,38 @@
+<!--pages/home/home.wxml-->
+<input placeholder='谢谢你，让我觉得这个世界如此美好' placeholder-style='color:#a5a5a5; font-size:14px;'>
+</input>
+
+<view class='bar'>
+  <scroll-view scroll-x>
+    <block wx:for="{{list}}" wx:key="key">
+      <view class="{{index==n?'current':''}}" bindtap='change' data-id='{{index}}'>{{item.title}}</view>
+    </block>
+  </scroll-view>
+</view>
+
+<block wx:for="{{videoList}}" wx:key="key">
+
+  <view wx:if="{{item.categoryID==n}}" class="videoModule">
+    <view class='video'>
+      <navigator url='/pages/detail/detail?id={{item.videoID}}'>
+        <image src='{{item.videoImgUrl}}'></image>
+      </navigator>
+    </view>
+    <view class='videoTitle'>
+      <image src='{{item.authorImgUrl}}'></image>
+      <text>{{item.title}}</text>
+      <view class='category'>
+        <text>{{item.categroy}}</text>
+      </view>
+      <view class='share'>
+        <image src='{{item.shareImgUrl}}'></image>
+      </view>
+    </view>
+    <view class='author'>
+      <text>{{item.author}}</text>
+      <text>.</text>
+      <text>{{item.commitTime}}</text>
+    </view>
+  </view>
+
+</block>

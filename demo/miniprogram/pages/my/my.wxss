@@ -1,0 +1,239 @@
+/* pages/my/my.wxss */
+
+.top {
+  width: 750rpx;
+  height: 600rpx;
+  border-bottom: solid #d0d0d0;
+}
+
+.bannerTop image {
+  width: 750rpx;
+  height: 260rpx;
+}
+
+.user {
+  width: 710rpx;
+  margin-left: 20rpx;
+  margin-bottom: 20rpx;
+}
+
+.userImg image {
+  position: absolute;
+  top: 160rpx;
+  left: 50rpx;
+  width: 200rpx;
+  height: 200rpx;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.userInfo {
+  position: absolute;
+  top: 280rpx;
+  right: 50rpx;
+  width: 180rpx;
+  height: 60rpx;
+  border-top: solid pink;
+  border-right: solid pink;
+  border-bottom: solid pink;
+  border-left: solid pink;
+}
+
+.userInfo text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: pink;
+}
+
+.userName {
+  width: 710rpx;
+  display: block;
+  float: left;
+  margin-top: 150rpx;
+  margin-left: 30rpx;
+}
+
+.userHot {
+  width: 710rpx;
+  display: block;
+  float: left;
+  margin-top: 20rpx;
+  margin-left: 30rpx;
+}
+
+.userHot text {
+  color: #9f9f9f;
+  padding-right: 50rpx;
+}
+
+.bottom {
+  width: 750rpx;
+}
+
+.selectBar {
+  width: 750rpx;
+  height: 80rpx;
+  /*
+  margin-top: 5rpx;
+  */
+  text-align: center;
+  border-bottom: solid #eaeaea;
+  background-color: #fff;
+}
+
+.selectBar view {
+  float: left;
+  margin-top: 10rpx;
+  margin-left: 150rpx;
+}
+
+.current {
+  color: pink;
+  padding-bottom: 15rpx;
+  border-bottom: 5rpx solid pink;
+}
+
+.recommendMoudle {
+  display: block;
+  float: left;
+  width: 750rpx;
+  height: 220rpx;
+  border-bottom: solid #eaeaea;
+}
+
+.recommend {
+  width: 710rpx;
+  height: 200rpx;
+  float: left;
+  margin-top: 20rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+}
+
+.left {
+  display: block;
+  float: left;
+  width: 230rpx;
+  height: 200rpx;
+}
+
+.left image {
+  display: block;
+  width: 210rpx;
+  height: 180rpx;
+  border-radius: 10rpx;
+}
+
+.right {
+  display: block;
+  float: left;
+  width: 470rpx;
+  height: 200rpx;
+}
+
+.recommendTitle {
+  display: block;
+  float: left;
+  width: 430rpx;
+  height: 100rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+}
+
+.recommendTitle text {
+  display: block;
+  float: left;
+  font-size: 14px;
+}
+
+.recommendAuthor {
+  display: block;
+  float: left;
+  width: 430rpx;
+  height: 50rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+}
+
+.recommendAuthor image {
+  display: block;
+  float: left;
+  width: 30rpx;
+  height: 30rpx;
+  padding-right: 10rpx;
+}
+
+.recommendAuthor text {
+  display: block;
+  float: left;
+  font-size: 12px;
+  color: #a1a1a1;
+}
+
+.recommendHot {
+  display: block;
+  float: left;
+  width: 430rpx;
+  height: 50rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+}
+
+.recommendHotPlay {
+  float: left;
+  width: 150rpx;
+}
+
+.recommendHotPlay image {
+  display: block;
+  float: left;
+  width: 30rpx;
+  height: 30rpx;
+  padding-right: 10rpx;
+}
+
+.recommendHotPlay text {
+  display: block;
+  float: left;
+  font-size: 12px;
+  color: #a1a1a1;
+}
+
+.recommendHotCommen {
+  float: left;
+  width: 150rpx;
+}
+
+.recommendHotCommen image {
+  display: block;
+  float: left;
+  width: 30rpx;
+  height: 30rpx;
+  padding-right: 10rpx;
+}
+
+.recommendHotCommen text {
+  display: block;
+  float: left;
+  font-size: 12px;
+  color: #a1a1a1;
+}
+
+.myContent {
+  width: 710rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+}
+
+.myContent image {
+  width: 560rpx;
+  height: 360rpx;
+  margin-left: 75rpx;
+  margin-right: 75rpx;
+}
+.myContent text{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,73 @@
+<!--pages/my/my.wxml-->
+<view>
+  <view class='top'>
+    <view class='bannerTop'>
+      <image src='cloud://wjj-copvb.776a-wjj-copvb/img/bannerTop.png'></image>
+    </view>
+    <view class='user'>
+      <view class='userImg'>
+        <image src='cloud://wjj-copvb.776a-wjj-copvb/img/userDefault.png'></image>
+      </view>
+      <view class='userInfo'>
+        <text>账号资料</text>
+      </view>
+      <view class='userName'>
+        <text>默认用户名</text>
+      </view>
+      <view class='userHot'>
+        <text>1关注</text>
+        <text>0粉丝</text>
+      </view>
+    </view>
+
+  </view>
+  <view class='bottom'>
+    <!--选择栏-->
+    <view class='selectBar'>
+      <block wx:for="{{list}}" wx:key="key">
+        <view class="{{index==n?'current':''}}" bindtap='change' data-id='{{index}}'>{{item.title}}</view>
+      </block>
+    </view>
+
+    <!--历史记录-->
+    <view wx:if='{{n==0}}'>
+      <block wx:for='{{recommendList}}' wx:key='key'>
+        <view class='recommendMoudle'>
+          <navigator url='/pages/detail/detail?id={{item.videoID}}'>
+            <view class='recommend'>
+              <!--2.2.1、左边图片-->
+              <view class='left'>
+                <image src='{{item.videoImgUrl}}'></image>
+              </view>
+              <!--2.2.2、右边信息-->
+              <view class='right'>
+                <view class='recommendTitle'>
+                  <text>{{item.recommendTitle}}</text>
+                </view>
+                <view class='recommendAuthor'>
+                  <image src='{{item.upImgUrl}}'></image>
+                  <text>{{item.recommendAuthor}}</text>
+                </view>
+                <view class='recommendHot'>
+                  <view class='recommendHotPlay'>
+                    <image src='{{item.recommendHotPlayImgUrl}}'></image>
+                    <text>{{item.recommendHotPlayNum}}</text>
+                  </view>
+                  <view class='recommendHotCommen'>
+                    <image src='{{item.recommendHotCommenImgUrL}}'></image>
+                    <text>{{item.recommendHotCommenNum}}</text>
+                  </view>
+                </view>
+              </view>
+            </view>
+          </navigator>
+        </view>
+      </block>
+    </view>
+    <!--我的投稿-->
+    <view wx:else class='myContent'>
+    <image src='cloud://wjj-copvb.776a-wjj-copvb/img/noContent.png'></image>
+    <text>你还没有投过稿哦！！！！</text>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,94 @@
+<!--pages/detail/detail.wxml-->
+<view class='detail'>
+  <!--1、不可滑动的上半部分-->
+  <view class='header'>
+    <view class='detailTop'>
+      <view class='videoBlock'>
+        <video src='{{videoDesc[videoID].videoUrl}}'></video>
+      </view>
+      <view class='selectBar'>
+        <block wx:for="{{list}}" wx:key="key">
+          <view class="{{index==n?'current':''}}" bindtap='change' data-id='{{index}}'>{{item.title}}</view>
+        </block>
+      </view>
+    </view>
+  </view>
+
+  <!--2、可滑动的下半部分-->
+  <view class='detailBottom' wx:if='{{n==0}}'>
+    <!--2.1、视频简介-->
+    <view class='desc'>
+      <view class='authorInfo'>
+        <image src='{{videoDesc[videoID].authorImgUrl}}'></image>
+        <view class='textInfo'>
+          <text>{{videoDesc[videoID].author}}</text>
+          <text>{{videoDesc[videoID].fansNum}}</text>
+        </view>
+      </view>
+      <view class='videoTitle'>
+        <text>{{videoDesc[videoID].title}}</text>
+      </view>
+      <view class='playInfo'>
+        <view class='playVolume'>
+          <image src='{{videoDesc[videoID].playImgUrl}}'></image>
+          <text>{{videoDesc[videoID].playVolume}}</text>
+        </view>
+        <view class='commentVolume'>
+          <image src='{{videoDesc[videoID].commentImgUrl}}'></image>
+          <text>{{videoDesc[videoID].commentVolume}}</text>
+        </view>
+        <view class='time'>
+          <text>{{videoDesc[videoID].time}}</text>
+        </view>
+        <view class='Reprint'>
+          <image src='{{videoDesc[videoID].reprintImgUrl}}'></image>
+          <text>{{videoDesc[videoID].reprint}}</text>
+        </view>
+
+        <view class='descInfo'>
+          <text>{{videoDesc[videoID].descInfo}}</text>
+        </view>
+      </view>
+    </view>
+
+
+    <!--2.2、推荐视频-->
+    <block wx:for='{{recommendList}}' wx:key='key'>
+      <view class='recommendMoudle'>
+        <navigator url='/pages/detail/detail?id={{item.videoID}}'>
+          <view class='recommend'>
+            <!--2.2.1、左边图片-->
+            <view class='left'>
+              <image src='{{item.videoImgUrl}}'></image>
+            </view>
+            <!--2.2.2、右边信息-->
+            <view class='right'>
+              <view class='recommendTitle'>
+                <text>{{item.recommendTitle}}</text>
+              </view>
+              <view class='recommendAuthor'>
+                <image src='{{item.upImgUrl}}'></image>
+                <text>{{item.recommendAuthor}}</text>
+              </view>
+              <view class='recommendHot'>
+                <view class='recommendHotPlay'>
+                  <image src='{{item.recommendHotPlayImgUrl}}'></image>
+                  <text>{{item.recommendHotPlayNum}}</text>
+                </view>
+                <view class='recommendHotCommen'>
+                  <image src='{{item.recommendHotCommenImgUrL}}'></image>
+                  <text>{{item.recommendHotCommenNum}}</text>
+                </view>
+              </view>
+            </view>
+          </view>
+        </navigator>
+      </view>
+    </block>
+
+
+
+  </view>
+
+
+</view>
